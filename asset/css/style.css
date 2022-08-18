@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Inter, sans-serif;
+}
+.clear{
+    clear: both;
+}
+.text-white{
+    color: #fff !important;
+}
+
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#nav, .shopping-btn {
+    display: inline-block;
+}
+
+.search .search-shoping{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+.shopping-btn .shopping-icon {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 46.5px;
+    padding: 0px 23px;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    padding: 0px 24px;
+    line-height: 46.5px;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a
+ {
+    color: #000 !important;
+    background-color: #ccc !important;
+    border-radius: 5px;
+}
+
+#header .shopping-btn:hover .shopping-icon {
+    color: #fff!important;
+    background-color: #ccc!important;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+
+
+#slider {
+    position: relative;
+    margin-top:46px;
+    padding-top: 50%;
+    background: url(/asset/img/nen1.jpg) top center / cover no-repeat;
+    border-radius: 5px;
+}
+
+#slider .text-content {
+    color: #fff;
+    padding: 32px 0px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#slider .text-discription {
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 15px 0px;
+}
+
+#content {
+background-color: rgb(15, 15, 15);
+height: 800px;
+}
+#content .content-section{
+    color: rgb(0, 0, 0);
+    
+
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+}
+#content .about-text{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px 0px;
+    text-align: center;
+    margin-top: 15px;
+}
+#content .content-section{
+    padding: 64px 0;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 400px;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #000;
+    
+}
+#content .section-sub-heading{
+    font-size: 15px;
+   text-align: center;
+   margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+  letter-spacing: 4px;
+color: #000;
+}
+#content .members-list{
+    margin-top: 20px;
+    overflow: hidden;
+}
+#content .member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    } 
+#content .member-name{
+    font-size: 15px;
+    text-align: center;
+}
+#content .member-img{
+    width:100px;
+    border-radius: 5px;
+    padding-top:15px;
+    }
+    .store-section{
+       
+        height: 1000px;
+        background-color: antiquewhite;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .store-list{
+        margin-top: 20px;
+    margin-top:32px -8px 0 ;
+   padding-bottom: 32px;
+
+   height: 600px;
+    
+    }
+    #store-section.section-heading {
+        margin-bottom: 10px;
+    }
+    #store-section.section-sub-heading{
+        margin-bottom: 10px;
+    }
+    .store-item{
+    float:left;
+    width: 33.33333%;
+    padding:0 8px ;
+    }
+   .store-img{
+  width: 100%;
+  display: block;
+
+  margin-top: 5px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+   .store-img:hover{
+    opacity: 0.6;
+    display: block;
+    
+   }
+   .store-content{
+    font-size: 15px;
+background-color: rgb(0, 0, 0);
+color: #000;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+}
+   .store-heading {
+    color:#000;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 5px;
+    text-align: center;
+    padding: 10px;
+   }
+   .store-money{
+margin-top: 15px;
+line-height: 1.4;
+   }
+   .store-buynow{
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    
+
+   }
+   .store-buynow:hover{
+    background-color: rgb(116, 102, 102);
+   }
+   .event-strore{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    animation: modalFadeIn ease;
+   }
+   .event-tude{
+    margin-top: 5px;
+    
+   }
+   .event-img{
+position: relative;
+width: 100%;
+display: block;
+border-radius: 25px;
+margin-top:5px;
+padding-top: 15px;
+}
+.store-form{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 100px;
+}
+.modal.open{
+    display: flex;
+}
+.modal-content{
+    background: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+   min-height: 200px;
+   position: relative;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   border-radius: 25px;
+   animation: modalFadeIn cubic-bezier(0, 0, 0, 0.75) .2s;
+}
+
+.modal-header {
+    background: #000;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.modal-coin{
+    margin-right:16px ;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-body{
+    padding: 16px;
+}
+.model-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+    border: solid;
+    border-radius: 25px;
+}
+
+
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+#buy-event{
+    background: #000;
+    color: #fff;
+    border-radius: 25px;
+    width: 120px;
+}
+#buy-event:hover{
+    background: rgb(99, 99, 99);
+}
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+width: 50%;
+}
+.col-third {
+    width: 33.33333%;
+}
+.contents-section{
+margin-top: 300px;
+text-align: center;
+
+}
+.sections-heading{
+    margin-bottom: 20px;
+}
+.sections-sub-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* contact form */
+.contact-content{
+    margin-top: 48px;
+}
