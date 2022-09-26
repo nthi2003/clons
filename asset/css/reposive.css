@@ -1,0 +1,37 @@
+@media(min-width:1024)
+{
+    .mobile-menu-btn
+    {
+        display: none;
+    }
+}
+/*tablet*/
+@media(min-width:740px) and (max-width:1023px)
+{
+
+    .mobile-menu-btn
+    {
+        display: none;
+    }
+}
+/* mobile*/
+@media(max-width:740px)
+{
+    #nav > li{
+        display: block;
+    }
+    .search .search-shoping
+    {
+        display: none;
+    }
+    .shopping-btn .shopping-icon{
+        display: none;
+    }
+    .iteam-img{
+        width: 50%;
+        height: 50%;
+    }
+    #content .about-text {
+        font-size: 15px;
+    }
+}

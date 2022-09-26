@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Inter, sans-serif;
 }
 .clear{
@@ -25,6 +26,8 @@ html {
     width: 100%;
     border-radius: 5px;
     font-weight: bold;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #nav, .shopping-btn {
@@ -39,14 +42,20 @@ html {
     border-radius: 25px;
     margin-top: 12px;
 }
-.shopping-btn .shopping-icon {
+.shopping-btn .shopping-icon
+,
+.mobile-menu-btn
+ {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
     line-height: 46.5px;
     padding: 0px 23px;
+    height: 46.5px;
 }
-
+.mobile-menu-btn:hover{
+ background-color: #ccc;
+}
 #nav > li {
     display: inline-block;
     position: relative;
@@ -133,11 +142,11 @@ height: 800px;
     font-weight: bolder;
     margin: 15px 0px;
     text-align: center;
-    margin-top: 15px;
+    padding: 20px;
 }
 #content .content-section{
     padding: 64px 0;
-    
+
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -177,16 +186,16 @@ color: #000;
 #content .member-img{
     width:100px;
     border-radius: 5px;
-    padding-top:15px;
+    
     }
-    .store-section{
+    #store{
        
         height: 1000px;
         background-color: antiquewhite;
         border-radius: 5px;
         margin-bottom: 20px;
     }
-    .store-list{
+    #store .store-list{
         margin-top: 20px;
     margin-top:32px -8px 0 ;
    padding-bottom: 32px;
@@ -194,18 +203,18 @@ color: #000;
    height: 600px;
     
     }
-    #store-section.section-heading {
+    #store .section-heading {
         margin-bottom: 10px;
     }
-    #store-section.section-sub-heading{
+    #store .section-sub-heading{
         margin-bottom: 10px;
     }
-    .store-item{
+    #store .store-item{
     float:left;
     width: 33.33333%;
     padding:0 8px ;
     }
-   .store-img{
+    #store .store-img{
   width: 100%;
   display: block;
 
@@ -214,19 +223,19 @@ color: #000;
   border-top-right-radius: 25px;
 }
 
-   .store-img:hover{
+#store .store-img:hover{
     opacity: 0.6;
     display: block;
     
    }
-   .store-content{
+   #store .store-content{
     font-size: 15px;
 background-color: rgb(0, 0, 0);
 color: #000;
 border-bottom-left-radius: 25px;
 border-bottom-right-radius: 25px;
 }
-   .store-heading {
+#store .store-heading {
     color:#000;
     font-size: 15px;
     font-weight: 600;
@@ -234,11 +243,11 @@ border-bottom-right-radius: 25px;
     text-align: center;
     padding: 10px;
    }
-   .store-money{
+   #store .store-money{
 margin-top: 15px;
 line-height: 1.4;
    }
-   .store-buynow{
+   #store .store-buynow{
     color: #000;
     background-color: #fff;
     text-decoration: none;
@@ -250,28 +259,29 @@ line-height: 1.4;
     
 
    }
-   .store-buynow:hover{
+   #store .store-buynow:hover{
     background-color: rgb(116, 102, 102);
    }
-   .event-strore{
+   #event{
     margin-top: 20px;
     width: 100%;
     height: 400px;
     animation: modalFadeIn ease;
    }
-   .event-tude{
+   #event .event-tude{
     margin-top: 5px;
     
    }
-   .event-img{
+#event .event-img{
 position: relative;
 width: 100%;
+height: 100%;
 display: block;
 border-radius: 25px;
 margin-top:5px;
 padding-top: 15px;
 }
-.store-form{
+.event-form{
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     text-decoration: none;

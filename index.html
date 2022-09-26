@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>ね ん ど ろ い ど</title>
      <linK rel="stylesheet" href="/asset/css/style.css">
+      <link rel="stylesheet" href="./asset/css/reposive.css">
    
       <link rel="shortcut icon" href="/asset/img/logo.jpg" type="image/x-icon" />
 
@@ -15,11 +16,10 @@
     <div id="main">
         <div id="header">
          <ul id="nav">
-           <li><a href="">家</a></li>
-           <li><a href="">約</a></li>
-           <li><a href="">店</a></li>
-           <li><a href="">イベント</a></li>
-           <li><a href="">コンタクト</a></li>      
+           <li><a href="#">家</a></li>
+           <li><a href="#content">約</a></li>
+           <li><a href="#store">店</a></li>
+           <li><a href="#event">イベント</a></li>     
          </ul>
          <!-------BEGIN-TRA CỨU--------->
          <div class="search">
@@ -28,7 +28,9 @@
         <div class="shopping-btn">
             <i class="shopping-icon ti-shopping-cart"></i>
         </div>
-
+         <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="ti-menu"></i>
+         </div>
 
 
          <!-------END-------------------->
@@ -84,7 +86,7 @@
 
          <br>
  
-        <div class="store-section">
+        <div id="store">
          <div class="content-section">
             <h2 class="section-heading ">店</h2>
             <p class="section-sub-heading ">Good Smile Company</p>
@@ -96,7 +98,7 @@
               <div class="store-content">
                <h3 class="store-heading text-white">No.1541 ねんどろいど 煉獄恭十郎 鬼滅の刃</h3>
                <p class="store-money text-white">10.000 ¥</p>
-               <a href="#" class="store-buynow">今買う</a>
+               <a href="" class="store-buynow">今買う</a>
               </div>
                </div>
                <div class="store-list">
@@ -151,15 +153,21 @@
              </div>
           </div>
        <!-------event------->
-       <div class="event-strore ">
+       <div id="event ">
        <div class="content-event">
          <h3 class="event-tude ">
             イベント
          </h3>
          <p class="event-tuden">最大50%のスーパープロモーション</p>
-         <img src= "/asset/img/Asap Regular.png" alt="event" class="event-img">
+         <img src= "/asset/img/Asap Regular.png"   usemap="#workmap" alt="event" class="iteam-img">
+         <map name="workmap">
+            <area shape="rect" coords="213,69,638,682" alt="nanairoi" href="#store">
+            <area shape="rect" coords="702,74,1174,745" alt="nanairoi" href="#store">
+            <area shape="rect" coords="1232,82,1702,753" alt="nanairoi" href="#store">
+          </map>
+        
          <!----->
-         <button href="#" class="store-form js-buy-store">あなたの情報を入力してください
+         <button href="#" class="event-form js-buy-store">あなたの情報を入力してください
             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 <lord-icon
     src="https://cdn.lordicon.com/ftrbfost.json"
@@ -182,7 +190,7 @@
         </div>
     </div>
     <!--contac-->
-  
+
     <div class="modal js-modal">
       <div class="modal-content">
          <div class="modal-close js-modal-close">
@@ -225,6 +233,7 @@
 </footer>
  
 <script src="/asset/css/js.js"></script>
+<script src="/asset/css/navbar.js"></script>
 
 </body>
 </html>
